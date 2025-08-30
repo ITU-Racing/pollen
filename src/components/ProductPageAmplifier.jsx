@@ -83,7 +83,6 @@ export default function ProductPageAmplifier() {
   const [orderSuccess, setOrderSuccess] = useState(false);
 
 
-  const navigate = useNavigate()
 
   const handleOrder = () => {
     if (selectedSize) {
@@ -94,9 +93,6 @@ export default function ProductPageAmplifier() {
     }
   };
 
-  const handleCustomize = () => {
-    navigate("/customizer-page-amplifier")
-  }
 
   const imgs = images[selectedSize] || [];
   const text = textes[selectedSize] 
@@ -181,13 +177,8 @@ export default function ProductPageAmplifier() {
           Order One
         </button>
 
-        <button
-          disabled={!selectedSize}
-          onClick={handleCustomize}
-          className="bg-black text-white p-4 rounded-xl text-lg hover:opacity-90 disabled:opacity-50"
-        >
-          Customize Your Guitar
-        </button>
+    
+       
 
         {/* Success Message */}
         {orderSuccess && (
