@@ -162,7 +162,8 @@ export default function Choicer({ isOpen, onToggle, onChange }) {
         <>
           <div>
             {/* 1) Birinci Seviye Kategori Seçimi */}
-            <div className="flex items-center gap-6 sm:gap-12 md:gap-20 lg:gap-32 p-2 rounded-lg pl-6 sm:pl-14 w-full">
+            <div className="flex items-center gap-6 sm:gap-12 md:gap-20 lg:gap-32 p-2 rounded-lg pl-4 sm:pl-14 w-full justify-end sm:justify-center">
+
               <button onClick={handlePrevCategory} className="pl-2 sm:pl-3">
                 <ArrowLeft size={20} className="sm:size-24" />
               </button>
@@ -173,7 +174,7 @@ export default function Choicer({ isOpen, onToggle, onChange }) {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0.5, x: -direction * 50 }}
                 transition={{ duration: 0.2 }}
-                className="min-w-[120px] text-right sm:text-center"
+                className="text-center min-w-[100px] sm:min-w-[150px]"
               >
                 <span className="text-base sm:text-lg font-normal">
                   {selected1.category}
