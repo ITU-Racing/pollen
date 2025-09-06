@@ -2,8 +2,10 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
+  const navigate = useNavigate();
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -27,7 +29,7 @@ export default function Navbar() {
               {/* Logo + Links */}
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex shrink-0 mr-8 items-center">
-                  <img alt="Your Company" src={logo} className="h-20 w-20" />
+                  <img alt="Your Company" onClick={()=> navigate("/")} src={logo} className="h-20 w-20" />
                 </div>
 
                 {/* Desktop Links */}

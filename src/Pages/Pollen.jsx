@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function PollenPage() {
+  const navigate = useNavigate();
   return (
     <div className="bg-white text-gray-900 min-h-screen">
       {/* Hero Section */}
@@ -86,7 +88,7 @@ export default function PollenPage() {
           Whether you are a sponsor, a partner, or a passionate engineer,  
           Project Pollen welcomes you to join us in shaping the future of racing.
         </p>
-        <button className="px-6 py-3 bg-[#1f2937] text-white font-semibold rounded-xl hover:bg-[#374151] transition">
+        <button onClick={()=> navigate("/contact-us")} className="px-6 py-3 bg-[#1f2937] text-white font-semibold rounded-xl hover:bg-[#374151] transition">
           Contact Us
         </button>
       </section>

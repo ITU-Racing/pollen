@@ -14,6 +14,7 @@ import Projects from './Pages/Projects.jsx'
 import Location from './Pages/Location.jsx'
 import Career from './Pages/Career.jsx'
 import Pollen from './Pages/Pollen.jsx'
+import ContactUs from './Pages/ContactUs.jsx'
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
          <Route path='/pollen' element = {<Pollen/>}/>
          <Route path='/location' element = {<Location/>}/>
          <Route path='/career' element = {<Career/>}/>
+         <Route path='/contact-us' element = {<ContactUs/>}/>
 
 
         </Routes>

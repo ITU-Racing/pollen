@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import {useNavigate} from "react-router-dom";
 
 export default function Career() {
+  const navigate = useNavigate();
   return (
     <div className="bg-white text-gray-900 min-h-screen">
       {/* Hero Section */}
@@ -77,7 +79,7 @@ export default function Career() {
           Whether you are an engineer, a strategist, or a designer,  
           there is a place for you in ITU Racing. Let’s build the future together.
         </p>
-        <button className="px-6 py-3 bg-[#1f2937] text-white font-semibold rounded-xl hover:bg-[#374151] transition">
+        <button onClick={()=> navigate("/contact-us")} className="px-6 py-3 bg-[#1f2937] text-white font-semibold rounded-xl hover:bg-[#374151] transition">
           Get in Touch
         </button>
       </section>
