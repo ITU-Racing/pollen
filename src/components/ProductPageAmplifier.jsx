@@ -18,6 +18,7 @@ import honeycombfront from '../assets/images/HoneyComb/honeycombfront.jpg';
 import honeycombback from '../assets/images/HoneyComb/honeycombback.jpg';
 import honeycombside from '../assets/images/HoneyComb/honeycombside.jpg';
 import honeycombperspective from '../assets/images/HoneyComb/honeycombperspective.jpg';
+      
 
 
 const images = {
