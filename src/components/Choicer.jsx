@@ -162,7 +162,7 @@ export default function Choicer({ isOpen, onToggle, onChange }) {
         <>
           <div>
             {/* 1) Birinci Seviye Kategori Seçimi */}
-            <div className="flex items-center gap-6 sm:gap-12 md:gap-20 lg:gap-32 p-2 rounded-lg pl-4 sm:pl-14 w-full justify-end sm:justify-center">
+            <div className="flex items-center gap-6 sm:gap-12 md:gap-20 lg:gap-32 p-2 rounded-lg pl-4 sm:pl-7 w-full justify-end sm:justify-center">
 
               <button onClick={handlePrevCategory} className="pl-2 sm:pl-3">
                 <ArrowLeft size={20} className="sm:size-24" />
