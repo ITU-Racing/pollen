@@ -173,7 +173,7 @@ export default function Choicer({ isOpen, onToggle, onChange }) {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0.5, x: -direction * 50 }}
                 transition={{ duration: 0.2 }}
-                className="text-center min-w-[100px] sm:min-w-[150px]"
+                className="min-w-[120px] text-right sm:text-center"
               >
                 <span className="text-base sm:text-lg font-normal">
                   {selected1.category}
