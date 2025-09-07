@@ -13,7 +13,7 @@ export default function ProjectsPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-4xl sm:text-6xl font-extrabold text-[#1f2937]"
-        >
+        > 
           Our <span className="text-yellow-500">Projects</span>
         </motion.h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg sm:text-xl text-gray-600">
@@ -34,7 +34,7 @@ export default function ProjectsPage() {
           <Recycle className="mx-auto text-yellow-500 mb-4" size={40} />
           <h3 className="text-xl font-bold text-[#1f2937] mb-3">Sustainable Guitars</h3>
           <p className="text-gray-700 mb-4">
-            Transforming forgotten <span className="text-yellow-500">carbon fibers</span>  
+            Transforming forgotten <span className="text-yellow-500">carbon fibers  {" "}</span>  
             into durable, customizable guitars and amplifiers.  
             Each piece reduces waste and embraces eco-conscious design.
           </p>
@@ -64,7 +64,7 @@ export default function ProjectsPage() {
           <Music className="mx-auto text-red-500 mb-4" size={40} />
           <h3 className="text-xl font-bold text-[#1f2937] mb-3">Innovation Lab</h3>
           <p className="text-gray-700 mb-4">
-            Exploring ways to merge <span className="text-yellow-500">technology</span>  
+            Exploring ways to merge <span className="text-yellow-500">technology  {" "}</span>  
             and <span className="text-[#3b82f6]">creativity</span>.  
             From smart amplifiers to modular accessories,  
             we are designing the future of music gear.

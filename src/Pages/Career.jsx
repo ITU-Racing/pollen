@@ -44,7 +44,7 @@ export default function Career() {
               Perfect for engineers and creators who love solving real-world
               challenges.
             </p>
-            <button className="mt-5 px-4 py-2 bg-[#1f2937] text-white rounded-lg hover:bg-[#374151] transition">
+            <button   onClick={() => navigate("/contact-us")} className="mt-5 px-4 py-2 bg-[#1f2937] text-white rounded-lg hover:bg-[#374151] transition">
               Apply Now
             </button>
           </motion.div>
@@ -65,7 +65,7 @@ export default function Career() {
               , CNC machining, and prototyping. Help us transform recycled
               materials into world-class guitars and amplifiers.
             </p>
-            <button className="mt-5 px-4 py-2 bg-[#3b82f6] text-white rounded-lg hover:bg-blue-600 transition">
+            <button   onClick={() => navigate("/contact-us")} className="mt-5 px-4 py-2 bg-[#3b82f6] text-white rounded-lg hover:bg-blue-600 transition">
               Apply Now
             </button>
           </motion.div>
@@ -86,7 +86,7 @@ export default function Career() {
               , global branding, and community engagement. Connect with
               sponsors, musicians, and new audiences to scale our vision.
             </p>
-            <button className="mt-5 px-4 py-2 bg-yellow-500 text-black rounded-lg hover:bg-yellow-400 transition">
+            <button onClick={() => navigate("/contact-us")} className="mt-5 px-4 py-2 bg-yellow-500 text-black rounded-lg hover:bg-yellow-400 transition">
               Apply Now
             </button>
           </motion.div>

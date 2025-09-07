@@ -57,7 +57,7 @@ export default function PollenPage() {
             <p className="mt-3 text-gray-700">
               We give{" "}
               <span className="font-semibold text-yellow-500">
-                carbon fiber waste
+                carbon fiber waste  {" "}
               </span>
               a second life, building instruments that are durable,
               eco-friendly, and part of the future of clean mobility and green
@@ -74,7 +74,7 @@ export default function PollenPage() {
             </h3>
             <p className="mt-3 text-gray-700">
               Every musician is unique. Our guitars and amplifiers can be{" "}
-              <span className="font-semibold text-[#3b82f6]">personalized</span>
+              <span className="font-semibold text-[#3b82f6]">personalized  {" "}</span>
               in model, color, and design — powered by smart engineering like
               sensor fusion and advanced control systems.
             </p>
@@ -90,7 +90,7 @@ export default function PollenPage() {
             <p className="mt-3 text-gray-700">
               Sustainability should be accessible. By combining{" "}
               <span className="font-semibold text-[#1f2937]">
-                sponsorships, partnerships,
+                sponsorships, partnerships,  {" "}
               </span>
               and efficient production, we deliver high-quality innovation at a
               price point that welcomes the next generation of musicians.
