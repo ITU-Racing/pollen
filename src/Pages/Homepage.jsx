@@ -12,9 +12,9 @@ export default function Homepage() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl sm:text-6xl font-extrabold tracking-tight text-[#1f2937]"
+          className="text-4xl sm:text-7xl font-extrabold tracking-tight text-[#1f2937]"
         >
-          ITU Racing & Pollen
+          Pollen
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -76,39 +76,48 @@ export default function Homepage() {
             className="p-6 bg-white border border-gray-200 rounded-2xl shadow-md"
           >
             <h3 className="text-xl font-semibold text-yellow-500">
-              Business Plan
+              Sustainability
             </h3>
             <p className="mt-3 text-gray-700">
-              Sponsorship, investment, and long-term strategy that give us an
-              edge in the Formula Student arena.
+              Giving forgotten {" "}
+              <span className="font-semibold text-yellow-500">
+                carbon fibers  {" "}
+              </span>
+              a second life by transforming waste into instruments that are
+              durable, eco-friendly, and designed for a greener future.
             </p>
           </motion.div>
+
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="p-6 bg-white border border-gray-200 rounded-2xl shadow-md"
           >
-            <h3 className="text-xl font-semibold text-[#3b82f6]">
-              Engineering
-            </h3>
+            <h3 className="text-xl font-semibold text-[#3b82f6]">Innovation</h3>
             <p className="mt-3 text-gray-700">
-              Sensor fusion, Kalman filtering, launch control, and energy
-              management systems — cutting-edge solutions.
-            </p>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="p-6 bg-white border border-gray-200 rounded-2xl shadow-md"
-          >
-            <h3 className="text-xl font-semibold text-[#1f2937]">Innovation</h3>
-            <p className="mt-3 text-gray-700">
-              Blending{" "}
-              <span className="text-yellow-500 font-semibold">creativity</span>{" "}
-              and
+              From{" "}
               <span className="text-[#3b82f6] font-semibold">
-                {" "}
-                technology
-              </span>{" "}
-              to build not just a race car, but a new culture of innovation.
+                advanced composites  {" "}
+              </span>
+              to smart design inspired by Formula Student engineering, we
+              combine cutting-edge research with bold creativity in every guitar
+              and amplifier.
+            </p>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="p-6 bg-white border border-gray-200 rounded-2xl shadow-md"
+          >
+            <h3 className="text-xl font-semibold text-[#1f2937]">
+              Customization
+            </h3>
+            <p className="mt-3 text-gray-700">
+              Tailored designs where{" "}
+              <span className="text-yellow-500 font-semibold">creativity  {" "}</span>
+              meets{" "}
+              <span className="text-[#3b82f6] font-semibold">technology</span>:
+              choose your model, neck, pickguard, and colors to craft an
+              instrument as unique as your music.
             </p>
           </motion.div>
         </div>

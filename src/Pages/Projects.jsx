@@ -53,7 +53,7 @@ export default function ProjectsPage() {
             guitars and amplifiers to <span className="text-[#3b82f6]">school music programs</span>.  
             Empowering youth to create, learn, and express through sustainable instruments.
           </p>
-          <p className="text-sm text-gray-500 italic">50+ instruments donated in 2025</p>
+          <p className="text-sm text-gray-500 italic">100+ instruments donated.</p>
         </motion.div>
 
         {/* Project 3 */}
@@ -69,27 +69,27 @@ export default function ProjectsPage() {
             From smart amplifiers to modular accessories,  
             we are designing the future of music gear.
           </p>
-          <p className="text-sm text-gray-500 italic">3 patents pending • R&D in progress</p>
+        
         </motion.div>
       </section>
 
       {/* Impact Numbers */}
       <section className="bg-gray-100 rounded-2xl shadow-inner py-16 mb-20">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-[#1f2937] mb-12">
-          Our <span className="text-yellow-500">Impact</span> in Numbers
+          Our <span className="text-yellow-500">Forecasted</span> Impact
         </h2>
         <div className="grid gap-8 sm:grid-cols-3 text-center">
           <div>
-            <p className="text-4xl font-extrabold text-yellow-500">8,000+</p>
+            <p className="text-4xl font-extrabold text-yellow-500">8.000+</p>
             <p className="text-gray-600">tons CO₂ saved</p>
           </div>
           <div>
-            <p className="text-4xl font-extrabold text-[#3b82f6]">50+</p>
+            <p className="text-4xl font-extrabold text-[#3b82f6]">100+</p>
             <p className="text-gray-600">instruments donated</p>
           </div>
           <div>
-            <p className="text-4xl font-extrabold text-red-500">75,000+</p>
-            <p className="text-gray-600">early community members</p>
+            <p className="text-4xl font-extrabold text-red-500">40.000+</p>
+            <p className="text-gray-600">community members</p>
           </div>
         </div>
       </section>

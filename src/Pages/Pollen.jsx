@@ -16,8 +16,8 @@ export default function PollenPage() {
           Project Pollen
         </motion.h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-gray-700">
-          Our <span className="text-yellow-500 font-semibold">Formula Student concept </span>  
-          unites technology, sustainability, and innovation to redefine racing.  
+          Our <span className="text-yellow-500 font-semibold">Pollen </span>
+          combines innovation, personalization and sustainability.
         </p>
       </section>
 
@@ -34,8 +34,9 @@ export default function PollenPage() {
           ></iframe>
         </div>
         <p className="mt-6 max-w-3xl text-center text-gray-600 text-lg">
-          Watch our <span className="text-[#3b82f6] font-bold">concept video </span>  
-          introducing Project Pollen — a journey that merges engineering,  
+          Watch our{" "}
+          <span className="text-[#3b82f6] font-bold">concept video </span>
+          introducing Project Pollen — a journey that merges engineering,
           business strategy, and sustainable innovation.
         </p>
       </section>
@@ -50,30 +51,49 @@ export default function PollenPage() {
             whileHover={{ scale: 1.05 }}
             className="p-6 bg-white border border-gray-200 rounded-2xl shadow-md"
           >
-            <h3 className="text-xl font-semibold text-yellow-500">Sustainability</h3>
+            <h3 className="text-xl font-semibold text-yellow-500">
+              Sustainability
+            </h3>
             <p className="mt-3 text-gray-700">
-              Designed with eco-friendly concepts that align  
-              with the future of clean mobility.
+              We give{" "}
+              <span className="font-semibold text-yellow-500">
+                carbon fiber waste
+              </span>
+              a second life, building instruments that are durable,
+              eco-friendly, and part of the future of clean mobility and green
+              sound.
             </p>
           </motion.div>
+
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="p-6 bg-white border border-gray-200 rounded-2xl shadow-md"
           >
-            <h3 className="text-xl font-semibold text-[#3b82f6]">Engineering</h3>
+            <h3 className="text-xl font-semibold text-[#3b82f6]">
+              Customization
+            </h3>
             <p className="mt-3 text-gray-700">
-              Innovative systems like sensor fusion, Kalman filtering,  
-              and launch control bring technology to life.
+              Every musician is unique. Our guitars and amplifiers can be{" "}
+              <span className="font-semibold text-[#3b82f6]">personalized</span>
+              in model, color, and design — powered by smart engineering like
+              sensor fusion and advanced control systems.
             </p>
           </motion.div>
+
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="p-6 bg-white border border-gray-200 rounded-2xl shadow-md"
           >
-            <h3 className="text-xl font-semibold text-[#1f2937]">Business Plan</h3>
+            <h3 className="text-xl font-semibold text-[#1f2937]">
+              Affordability
+            </h3>
             <p className="mt-3 text-gray-700">
-              A strategic roadmap that combines sponsorships,  
-              investment opportunities, and international exposure.
+              Sustainability should be accessible. By combining{" "}
+              <span className="font-semibold text-[#1f2937]">
+                sponsorships, partnerships,
+              </span>
+              and efficient production, we deliver high-quality innovation at a
+              price point that welcomes the next generation of musicians.
             </p>
           </motion.div>
         </div>
@@ -85,10 +105,14 @@ export default function PollenPage() {
           Be Part of the Journey
         </h2>
         <p className="max-w-2xl mx-auto text-gray-700 mb-8">
-          Whether you are a sponsor, a partner, or a passionate engineer,  
-          Project Pollen welcomes you to join us in shaping the future of racing.
+          Whether you are a sponsor, a partner, or a passionate engineer,
+          Project Pollen welcomes you to join us in shaping the future of
+          racing.
         </p>
-        <button onClick={()=> navigate("/contact-us")} className="px-6 py-3 bg-[#1f2937] text-white font-semibold rounded-xl hover:bg-[#374151] transition">
+        <button
+          onClick={() => navigate("/contact-us")}
+          className="px-6 py-3 bg-[#1f2937] text-white font-semibold rounded-xl hover:bg-[#374151] transition"
+        >
           Contact Us
         </button>
       </section>
