@@ -1,89 +1,59 @@
-import { useState } from "react";
+import { motion } from "framer-motion";
+import worldMap from "../assets/images/yoyoyo.png"; // 🔥 senin görsel
 
-export default function Location() {
-  const [active, setActive] = useState(false);
-  const [particles, setParticles] = useState([]);
-
-  const handleClick = () => {
-    setActive(true);
-
-    const newParticles = Array.from({ length: 25 }).map((_, i) => ({
-      id: Date.now() + "-" + i,
-      left: 50, // kutunun ortasından çıksın
-      top: 50,
-      size: 28 + Math.random() * 16,
-      dx: (Math.random() - 0.5) * 300,
-      spin: Math.random() * 360 - 180,
-      dur: 2 + Math.random() * 2,
-      h: 150 + Math.random() * 200
-    }));
-    setParticles((prev) => [...prev, ...newParticles]);
-
-    setTimeout(() => {
-      setParticles((prev) =>
-        prev.filter((p) => !newParticles.some((np) => np.id === p.id))
-      );
-    }, 5000);
-  };
-
+export default function LocationPage() {
   return (
-    <div className="min-h-screen grid place-items-center bg-gradient-to-br from-[#806262] to-[#c86363] overflow-hidden">
-      <div
-        className={`relative w-[86vw] max-w-[540px] aspect-[16/10] rounded-2xl backdrop-blur-lg bg-white/10 shadow-xl cursor-pointer select-none overflow-hidden transition-transform duration-200 ${
-          active ? "scale-100" : "active:scale-95"
-        }`}
-        onClick={handleClick}
-      >
-        {/* arka plan ışık */}
-        <div className="absolute inset-[-40%] bg-[radial-gradient(60%_60%_at_30%_30%,#ff7a59_20%,transparent_60%),radial-gradient(60%_60%_at_70%_70%,#f4b860_18%,transparent_62%)] blur-[60px] opacity-30 animate-[drift_16s_ease-in-out_infinite_alternate]" />
-
-        {/* başlık */}
-        <div className="relative z-10 flex flex-col items-center gap-1 text-center px-4">
-          <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-orange-100 text-[clamp(22px,4.2vw,36px)] drop-shadow">
-            Eylülü sevdiğimi öğrenmek için tıkla
-          </h1>
-        </div>
-
-        {/* “Eylülü seviyorum” yazısı */}
-        <div
-          className={`absolute left-1/2 bottom-[22%] -translate-x-1/2 px-4 py-2 rounded-xl font-bold text-[clamp(24px,5.8vw,44px)] text-[#3b2a1f] shadow-xl transition-all duration-500 bg-gradient-to-r from-[#ffecd2cc] to-[#fcb69fcc] ${
-            active
-              ? "opacity-100 translate-y-0 scale-100"
-              : "opacity-0 translate-y-3 scale-95"
-          }`}
+    <div className="bg-white text-gray-900 min-h-screen px-6 py-20">
+      {/* Hero */}
+      <section className="text-center mb-16">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-4xl sm:text-6xl font-extrabold text-[#1f2937]"
         >
-          Eylülü seviyorum
-        </div>
+          Our <span className="text-yellow-500">Global Reach</span>
+        </motion.h1>
+        <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-gray-600">
+          From Istanbul to the world — our journey spreads across continents,  
+          building connections with{" "}
+          <span className="text-[#3b82f6] font-semibold">musicians, innovators, {" "}</span>  
+          and sustainability-driven partners worldwide.
+        </p>
+      </section>
 
-        {/* ipucu */}
-        {!active && (
-          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 text-xs opacity-60 z-10">
-            tıkla ✨
+      {/* Map */}
+      <section className="flex justify-center mb-20">
+        <motion.img
+          src={worldMap}
+          alt="Pollen Global Locations"
+          className="max-w-7xl w-full rounded-2xl shadow-lg border border-gray-200"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        />
+      </section>
+
+      {/* Impact Numbers (ProjectsPage ile aynı içerik) */}
+      <section className="bg-gray-100 rounded-2xl shadow-inner py-16">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-[#1f2937] mb-12">
+          Our <span className="text-yellow-500">Impact</span> in Numbers
+        </h2>
+        <div className="grid gap-8 sm:grid-cols-3 text-center">
+          <div>
+            <p className="text-4xl font-extrabold text-yellow-500">8,000+</p>
+            <p className="text-gray-600">tons CO₂ saved</p>
           </div>
-        )}
-
-        {/* kalpler */}
-        {particles.map((p) => (
-          <span
-            key={p.id}
-            className="absolute pointer-events-none select-none"
-            style={{
-              left: `${p.left}%`,
-              top: `${p.top}%`,
-              transform: "translate(-50%,-50%)",
-              fontSize: `${p.size}px`,
-              animation: `floatUp ${p.dur}s ease-out forwards`,
-              transformOrigin: "center",
-              "--dx": `${p.dx}px`,
-              "--h": `${p.h}px`,
-              "--spin": `${p.spin}deg`,
-              "--s": 0.8 + Math.random() * 1.2
-            }}
-          >
-            ❤️
-          </span>
-        ))}
-      </div>
+          <div>
+            <p className="text-4xl font-extrabold text-[#3b82f6]">50+</p>
+            <p className="text-gray-600">instruments donated</p>
+          </div>
+          <div>
+            <p className="text-4xl font-extrabold text-red-500">75,000+</p>
+            <p className="text-gray-600">early community members</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
